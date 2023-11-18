@@ -2,6 +2,7 @@
 
 //ConsoleクラスのReadLine()メソッドを使うと、コンソール上で入力された文字列を取得することができる
 // 文字列で「Match」と一致した場合は表示を返す
+// モジュールを新規で開いて実行する
 
 Module Program
     Sub Main(args As String())
