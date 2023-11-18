@@ -1,4 +1,8 @@
 
+
+//ConsoleクラスのReadLine()メソッドを使うと、コンソール上で入力された文字列を取得することができる
+// 文字列で「Match」と一致した場合は表示を返す
+
 Module Program
     Sub Main(args As String())
         Dim check As String = Console.ReadLine()
