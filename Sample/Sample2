@@ -1,0 +1,94 @@
+
+// モジュール内で算数計算の結果表示
+
+Module Program
+    Sub Main(args As String())
+        Dim num1 As Integer = 10
+        Dim num2 As Integer = 25
+        ' num1にnum2の値を加算する
+        num1 += num2
+        Console.WriteLine(num1)
+
+        Dim str1 As String = "Visual"
+        Dim str2 As String = "Basic"
+        ' str1の文字列にstr2の文字列を連結する
+        str1 += str2
+        Console.WriteLine(str1)
+
+        Dim n1 As Integer = 10
+        Dim n2 As Integer = 5
+        ' n1からn2の値を減算する
+        n1 -= n2
+        Console.WriteLine(n2)
+
+        Dim n3 As Integer = 10
+        Dim n4 As Integer = 5
+        ' n3にn4の値を乗算する
+        n3 *= n4
+        Console.WriteLine(n3)
+
+        Dim v1 As Integer = 10
+        Dim v2 As Integer = 5
+        ' v1をv2の値で割る
+        v1 /= v2
+        Console.WriteLine(v1)
+
+        Dim s1 As String = "Hello"
+        Dim s2 As String = "World!"
+        ' s1の文字列にs2の文字列を連結する
+        s1 &= s2
+        Console.WriteLine(s1)
+
+        Dim number1 As Integer = 10
+        Dim number2 As Integer = 5
+        ' number1に対するnumber2のべき乗を求める
+        number1 ^= number2
+        Console.WriteLine(number1)
+
+        'Short型は16ビット
+        Dim var1 As Short = 255
+        Dim var2 As Short = 4
+        ' var1のビット列をvar2の4桁左シフトすると値が16倍になる
+        var1 <<= var2
+        Console.WriteLine(var1)
+
+        'Short型は16ビット
+        Dim var3 As Short = 255
+        Dim var4 As Short = 4
+        ' var1のビット列をvar2の4桁右シフトすると値が1/16になる
+        var3 >>= var4
+        Console.WriteLine(var3)
+
+        Dim n As Integer
+        n = 5 * (5 + 1)
+
+        ' 16進数の80000001
+        Dim a As Integer = &H80000001
+        ' aは16進数表記で7FFFFFFEになる
+        a = Not a
+        ' 7FFFFFFEが10進数表記の2147483646と出力される
+        Console.WriteLine(a)
+
+        ' Byte型は8ビット
+        Dim b As Byte
+        ' Or演算
+        b = &H5A Or &H11
+        ' 16進数表記の58が10進数表記の91と出力される
+        Console.WriteLine(b)
+
+        ' Byte型は8ビット
+        Dim c As Byte
+        ' And演算
+        c = &H5A And &H11
+        ' 16進数表記の10が10進数表記の16と出力される
+        Console.WriteLine(c)
+
+        ' Byte型は8ビット
+        Dim d As Byte
+        ' And演算
+        d = &H5A Xor &H11
+        ' 16進数表記の4Bが10進数表記の75と出力される
+        Console.WriteLine(d)
+
+    End Sub
+End Module
