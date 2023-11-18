@@ -1,0 +1,21 @@
+
+//入力した3つの値の比較演算
+
+Module Program
+    Sub Main(args As String())
+
+        Dim a As Integer = Console.ReadLine()
+        Dim b As Integer = Console.ReadLine()
+        Dim c As Integer = Console.ReadLine()
+        Dim check1, check2 As Boolean
+
+        ' aはbより大きく、かつbはcより大きい
+        check1 = a > b And b > c
+        ' bはaより大きく、かつbはcより大きい
+        check2 = b > a And b > c
+
+        Console.WriteLine(check1)
+        Console.WriteLine(check2)
+
+    End Sub
+End Module
