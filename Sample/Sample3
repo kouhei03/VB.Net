@@ -1,0 +1,24 @@
+//比較演算子の実行結果
+
+Module Program
+    Sub Main(args As String())
+
+        Dim A As Integer = 3
+        Dim B As Integer = 2
+        Dim C As Integer = 1
+        Console.WriteLine(A > B And B > C) ' True
+        Console.WriteLine(B > A And B > C) ' False
+
+        Console.WriteLine(A > B Or B > C) ' True
+        Console.WriteLine(B > A Or B > C) ' True
+        Console.WriteLine(B > A Or C > B) ' False
+
+        Console.WriteLine(Not (A > B)) ' False
+        Console.WriteLine(Not (B > A)) ' True
+
+        Console.WriteLine(A > B Xor C > B) ' True
+        Console.WriteLine(B > A Xor B > C) ' True
+        Console.WriteLine(A > B Xor B > C) ' False
+        Console.WriteLine(B > A Xor C > B) ' False
+    End Sub
+End Module
