@@ -1,0 +1,15 @@
+
+Module Program
+    Sub Main(args As String())
+        Dim check As String = Console.ReadLine()
+
+        If check Like "Match" Then
+            ' Trueの場合
+            Console.WriteLine("一致")
+
+        Else
+            'それ以外（False）の場合
+            Console.WriteLine("不一致")
+        End If
+    End Sub
+End Module
