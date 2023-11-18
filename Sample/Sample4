@@ -1,0 +1,13 @@
+
+//演算子の結合規則表示結果
+
+Module Program
+    Sub Main(args As String())
+        Dim n1 As Integer = 64 / 8 / 4
+        Dim n2 As Integer = (64 / 8) / 4
+        Dim n3 As Integer = 64 / (8 / 4)
+        Console.WriteLine(n1)
+        Console.WriteLine(n2)
+        Console.WriteLine(n3)
+    End Sub
+End Module
